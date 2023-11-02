@@ -48,7 +48,7 @@ describe("Inec Contract", function(){
 
         it('should vote for Tinubu', async function(){
             
-            initialTinubuVote = await inec.Bola_Tinubu_APC()
+            initialTinubuVote = await inec.Bola_Tinubu_APC();
             one = await inec.one();
             await inec.APC__Bola_Tinubu();
             expect((initialTinubuVote + (one))).to.equal(( one ))
