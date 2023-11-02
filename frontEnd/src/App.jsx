@@ -5,11 +5,9 @@ import './App.css'
 import { ConnectButton } from '@rainbow-me/rainbowkit';
 import { useContractReads } from 'wagmi'
 import myAbi from '../utils.js/abi.json'
-
+import { useState } from 'react'
 
 function App() {
-  
-  
   const { data: readData, isError, isLoading } = useContractReads ({
     contracts: [
       {
